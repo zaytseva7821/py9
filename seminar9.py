@@ -22,6 +22,7 @@ def stop(message):
     culc = False
     global game
     game = False
+    count = 0
     bot.reply_to(message, 'Хорошо')
 
 
@@ -51,6 +52,7 @@ def handle_text(message):
         elif int(message.text) == num:
             bot.reply_to(message, f"Ты угадал! Тебе понадобилось {count} попыток")
             game = False
+	    count = 0
         elif int(message.text) < num:
             bot.reply_to(message, "Твое число меньше загаданного")
     else:
