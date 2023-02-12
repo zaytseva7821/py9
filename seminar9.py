@@ -2,7 +2,7 @@ import random
 import telebot
 import requests
 
-bot = telebot.TeleBot("5990928720:AAGST3rPUOO8NleGecmDeVtubNwtQFV5NuI", parse_mode=None)
+bot = telebot.TeleBot("", parse_mode=None)
 
 num = 0
 count = 0
